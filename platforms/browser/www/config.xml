@@ -8,13 +8,6 @@
         michassel
     </author>
     <content src="index.html" />
-    <access launch-external="yes" origin="*" />
-    <access launch-external="yes" origin="mailto:*" />
-    <allow-intent href="http://*/*" />
-    <allow-intent href="https://*/*" />
-    <allow-intent href="tel:*" />
-    <allow-intent href="sms:*" />
-    <allow-intent href="mailto:*" launch-external="yes" />
-    <allow-intent href="geo:*" />
     <preference name="Fullscreen" value="true" />
+    <preference name="Orientation" value="portrait" />
 </widget>

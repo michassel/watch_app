@@ -1,41 +1,6 @@
 body {
-  padding-top: 70px;
-  padding-bottom: 30px;
-}
-.theme-dropdown .dropdown-menu {
-  position: static;
-  display: block;
-  margin-bottom: 20px;
-}
-.theme-showcase > p > .btn {
-  margin: 5px 0;
-}
-.theme-showcase .navbar .container {
-  width: auto;
-}
-.navbar-default {
-  background-image: -webkit-linear-gradient(top, #3c3c3c 0%, #222 100%);
-  background-image:      -o-linear-gradient(top, #3c3c3c 0%, #222 100%);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#3c3c3c), to(#222));
-  background-image:         linear-gradient(to bottom, #3c3c3c 0%, #222 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff3c3c3c', endColorstr='#ff222222', GradientType=0);
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
-  background-repeat: repeat-x;
-}
-.navbar-default .navbar-nav > .open > a,
-.navbar-default .navbar-nav > .active > a {
-  background-image: -webkit-linear-gradient(top, #080808 0%, #0f0f0f 100%);
-  background-image:      -o-linear-gradient(top, #080808 0%, #0f0f0f 100%);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#080808), to(#0f0f0f));
-  background-image:         linear-gradient(to bottom, #080808 0%, #0f0f0f 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff080808', endColorstr='#ff0f0f0f', GradientType=0);
-  background-repeat: repeat-x;
-  -webkit-box-shadow: inset 0 3px 9px rgba(0, 0, 0, .25);
-          box-shadow: inset 0 3px 9px rgba(0, 0, 0, .25);
-}
-.navbar-default .navbar-brand,
-.navbar-default .navbar-nav > li > a {
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, .25);
+  padding-top:20px;
+  margin-top: 0px;
 }
 
 /*
@@ -47,14 +12,17 @@ Custom CSS
 .blue-text-on-dark {
   color: #5bc0de;
 }
+.whte-text {
+  color: #ffffff;
+}
 .signin-form {
   margin: 0;
   padding: 20px 0 10px 0;
 }
 img.logo-header {
-  margin: 0 25px 10px 20px;
-  width: 150px;
-  height: 150px;
+  margin: 0 25px 10px 0;
+  width: 50px;
+  height: 50px;
 }
 h1.logo {
   margin: 0;
@@ -74,6 +42,8 @@ h1.logo {
 .right {
   float: right;
 }
+
+
 .footer {
   position: absolute;
   bottom: 0;
@@ -100,6 +70,18 @@ img.logo-navbar {
   width: 35px;
   height: 35px;
 }
+.btn {
+  border-radius: 5px;
+  border: 0;
+  background-color: #eeeeee;
+}
+.fa-color{
+  color: #ececec;
+}
+.btn-black {
+  background-color: #1e1e1e;
+  border: 0;
+}
 .space {
   padding-top: 25px;
 }
@@ -119,8 +101,29 @@ img.logo-navbar {
 	position: fixed;
     bottom: 20px;
 }
-.vertical-center {
-  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
-  min-height: 50vh; /* These two lines are counted as one :-)       */
-  padding-top: 25%;
+.bottom-fixed {
+	position: fixed;
+    bottom: 20px;
+    right: 40px;
+}
+
+#preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  background: #fff url("../images/preloader.svg") no-repeat center center;
+}
+#background{
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  background-color: #2b2b33;
 }
